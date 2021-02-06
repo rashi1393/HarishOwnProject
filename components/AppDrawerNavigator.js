@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { createDrawerNavigator } from "react-navigation-drawer"
-
 import MyProfileScreen from '../screens/MyProfileScreen'
 import FindMechanicScreen from '../screens/FindMechanicScreen'
 import CustomSideBarMenu from './CustomSideBarMenu'
@@ -10,9 +9,8 @@ export const AppDrawerNavigator = createDrawerNavigator({
     FindMechanic: {screen:FindMechanicScreen},
 },
 {
-    initialRouteName: 'MyProfile'
+    contentComponent: CustomSideBarMenu
 },
 {
-    contentComponent: CustomSideBarMenu
-}
-)
+    initialRouteName: "MyProfile"
+})
